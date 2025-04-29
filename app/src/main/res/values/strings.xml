@@ -1,0 +1,16 @@
+
+
+<resources>
+    <string name="app_name">Embaralhado</string>
+    <string name="instructions">Desembaralhe essa palavra utilizando todas as letras.</string>
+    <string name="skip">Próxima</string>
+    <string name="submit">Enviar</string>
+    <string name="score">Score: %d</string>
+    <string name="word_count">%d/10</string>
+    <string name="enter_your_word">Digite sua palavra</string>
+    <string name="congratulations">Parabéns!</string>
+    <string name="you_scored">"Seu score: %d"</string>
+    <string name="exit">Sair</string>
+    <string name="play_again">Jogar de novo</string>
+    <string name="wrong_guess">Palavra errada</string>
+</resources>
