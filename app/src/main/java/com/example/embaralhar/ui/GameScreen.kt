@@ -15,6 +15,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme.colorScheme
@@ -88,6 +89,20 @@ fun GameScreen(gameViewModel: GameViewModel = viewModel()) {
             ) {
                 Text(
                     text = stringResource(R.string.submit),
+                    fontSize = 16.sp
+                )
+            }
+
+            Button(
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = colorScheme.secondary,
+                    contentColor   = colorScheme.onSecondary
+                ),
+                onClick = { gameViewModel.reShuffleCurrentWord() }
+            ) {
+                Text(
+                    text = (stringResource(R.string.embaralhar_novamente)),
                     fontSize = 16.sp
                 )
             }

@@ -31,6 +31,17 @@ class GameViewModel : ViewModel() {
         _uiState.value = GameUiState(currentScrambleWord = pickRandomWordAndShuffle())
     }
 
+    fun reShuffleCurrentWord() {
+        val reshuffledWord = shuffleCurrentWord(currentWord)
+        _uiState.update { currentState ->
+            currentState.copy(
+                currentScrambleWord = reshuffledWord,
+                isGuessedWordWrong = false
+            )
+        }
+    }
+
+
     fun updateUserGuess(guessedWord: String) {
         userGuess = guessedWord
     }

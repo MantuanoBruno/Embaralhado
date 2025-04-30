@@ -13,4 +13,5 @@
     <string name="exit">Sair</string>
     <string name="play_again">Jogar de novo</string>
     <string name="wrong_guess">Palavra errada</string>
+    <string name="embaralhar_novamente">Embaralhar novamente</string>
 </resources>
